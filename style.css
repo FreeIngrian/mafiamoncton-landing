@@ -136,15 +136,17 @@ a{ color: inherit; }
 /* right image */
 .hero__right{
   position: absolute;
-  right: -150;
-  bottom: 0;
+  right: -150px;       /* обязательно px */
+  bottom: 0;           /* к низу .hero */
   z-index: 0;
   pointer-events: none;
 }
+
 .hero__characters{
   display:block;
   width: min(650px, 65vw);
   height: auto;
+  transform: translateX(80px);  /* лёгкий вынос вправо */
 }
 
 /* hero mail */
